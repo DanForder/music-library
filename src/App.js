@@ -2,10 +2,16 @@ import React, { Component } from "react";
 import "./App.scss";
 import Routes from "./routes/Routes";
 import { Link } from "@reach/router";
+// import SearchBar from "./components/SearchBar/SearchBar";
 // import GenrePage from "./components/GenrePage/GenrePage";
 
 class App extends Component {
   state = {};
+
+  // onSearchBarChange = value => {
+  //   console.log(value);
+  // };
+
   render() {
     return (
       <div>
@@ -15,6 +21,7 @@ class App extends Component {
           <Link to="/reggae">Reggae</Link>
           <Link to="/classical">Classical</Link>
         </nav>
+        {/* <SearchBar onSearch={this.onSearchBarChange} /> */}
         <Routes />
       </div>
     );
